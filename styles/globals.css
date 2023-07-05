@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #ffffff;
+    color: black;
+}
+
+@layer components {
+    .header-container {
+        @apply flex justify-between p-2 bg-[#ffffff]
+    }
+
+    .header-logo {
+        @apply text-5xl font-bold text-[#8c12f0] justify-center items-center
+    }
+
+    .request-container {
+        @apply flex flex-col items-center justify-center bg-[#efeeee] mt-7 ml-5 rounded-xl border border-b-gray-800
+    }
+
+    .request-title-red {
+        @apply text-3xl font-bold p-1 mb-4 underline text-purple-600
+    }
+
+    .request-text-margin {
+        @apply text-2xl font-semibold mr-[75px]
+    }
+
+    .request-text-normal {
+        @apply text-2xl font-semibold
+    }
+
+    .status-container {
+        @apply flex flex-col justify-center items-center
+    }
+
+    .status {
+        @apply text-center m-2 p-1 bg-[#AAC4FF] rounded-lg border border-b-gray-800
+    }
+
+    .status-title {
+        @apply text-3xl font-bold p-1 mb-4 underline
+    }
+
+    .status-text {
+        @apply text-2xl font-semibold m-1
+    }
+
+    .status-input {
+        @apply p-1 m-1 w-[200px] rounded-sm bg-[#D2DAFF]
+    }
+
+    .status-render-container {
+        @apply w-[450px] bg-[#8c12f044] rounded-lg border border-b-gray-800
+    }
+
+    .status-render-title {
+        @apply text-2xl font-bold p-1 mb-4 underline text-center
+    }
+
+    .status-render-text {
+        @apply font-semibold ml-2
+    }
+
+    .container-input {
+        @apply p-1 m-1 rounded-sm bg-[#D2DAFF]
+    }
+
+    .getter-container {
+        @apply flex flex-col justify-between p-[5px] m-2 bg-[#A3C7D6] rounded-lg
+    }
+
+    .getter-card {
+        @apply flex flex-col border w-full items-center pb-2 bg-[#AAC4FF] rounded-lg
+    }
+
+    .getter-card-title {
+        @apply p-2 font-semibold text-2xl
+    }
+
+    .getter-card-number {
+        @apply pb-2 text-xl font-semibold
+    }
+
+    .getter-input {
+        @apply p-1 m-1 w-[200px] rounded-sm bg-[#D2DAFF]
+    }
+
+    .button-common {
+        @apply bg-[#0000FF] p-2 rounded-md font-semibold text-white m-2
+    }
+
+}
